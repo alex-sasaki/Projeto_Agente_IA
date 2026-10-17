@@ -155,7 +155,7 @@ loop_agente(Pos, _, _) :-
     perceber_tesouro(Pos),
     !,
     format('Posicao atual: ~w~n', [Pos]),
-    format('Sucesso! O tesouro foi localizado em ~w!~n', [Pos]),
+    format('Sucesso! O tesouro foi localizado em ~w!~n', [Pos]).
 
 % Ciclo iterativo recursivo
 loop_agente(PosAtual, DicaAtual, Visitados) :-

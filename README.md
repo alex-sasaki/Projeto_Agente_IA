@@ -81,7 +81,7 @@ swipl --version
 
 ```text
 caca-ao-tesouro/
-├── agente.pl       # Código-fonte principal do agente e regras do grid
+├── CacaTesouro.pl      # Código-fonte principal do agente e regras do grid
 └── README.md       # Instruções e documentação do projeto
 ```
 
@@ -90,12 +90,12 @@ caca-ao-tesouro/
 ## Como Executar
 
 ### 1. Abrir o terminal no diretório do projeto
-No VS Code, abra o terminal integrado (`Ctrl + \``) e navegue até a pasta onde está o arquivo `agente.pl`.
+No VS Code, abra o terminal integrado (`Ctrl + \``) e navegue até a pasta onde está o arquivo `CacaTesouro.pl`.
 
 ### 2. Iniciar o console do SWI-Prolog
 Carregue o arquivo diretamente no interpretador:
 ```bash
-swipl agente.pl
+swipl CacaTesouro.pl
 ```
 
 O terminal exibirá o prompt interativo:
@@ -133,7 +133,7 @@ iniciar_caca(+Largura, +Altura, +NumPistas, +PosicaoInicial).
   ```
 
 ### 4. Recarregar após alterações no código
-Caso modifique o arquivo `agente.pl`, não é necessário reiniciar o terminal. No prompt do Prolog, use:
+Caso modifique o arquivo `CacaTesouro.pl`, não é necessário reiniciar o terminal. No prompt do Prolog, use:
 ```prolog
 ?- make.
 ```
