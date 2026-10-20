@@ -106,30 +106,31 @@ O terminal exibirá o prompt interativo:
 ### 3. Executar o Agente
 O predicado principal segue a assinatura:
 ```prolog
-iniciar_caca(+Largura, +Altura, +NumPistas, +PosicaoInicial).
+iniciar_caca(+Largura, +Altura, +NumPistas, +NumObstaculos, +PosicaoInicial).
 ```
 
 * **Parâmetros:**
   - `Largura` (inteiro): Limite do eixo X ($MaxX$).
   - `Altura` (inteiro): Limite do eixo Y ($MaxY$).
   - `NumPistas` (inteiro): Quantidade de pistas intermediárias a serem sorteadas.
+  - `NumObstaculos` (inteiro): Quantidade de obstáculos distribuidos aleatoriamente no grid.
   - `PosicaoInicial` (`pos(X, Y)`): Célula de partida do agente.
 
 #### Exemplos de Consulta:
 
-* **Grid 5x5 com 3 pistas partindo de (1, 1):**
+* **Grid 5x5 com 3 pistas e 6 obstáculos, partindo de (1, 1):**
   ```prolog
-  ?- iniciar_caca(5, 5, 3, pos(1, 1)).
+  ?- iniciar_caca(5, 5, 3, 6, pos(1, 1)).
   ```
 
-* **Grid 8x8 com 5 pistas partindo do centro (4, 4):**
+* **Grid 8x8 com 5 pistas e 8 obstáculos, partindo do centro (4, 4):**
   ```prolog
-  ?- iniciar_caca(8, 8, 5, pos(4, 4)).
+  ?- iniciar_caca(8, 8, 5, 8, pos(4, 4)).
   ```
 
-* **Grid 10x10 com 8 pistas partindo de (10, 10):**
+* **Grid 10x10 com 8 pistas e 11 obstáculos, partindo de (10, 10):**
   ```prolog
-  ?- iniciar_caca(10, 10, 8, pos(10, 10)).
+  ?- iniciar_caca(10, 10, 8, 11, pos(10, 10)).
   ```
 
 ### 4. Recarregar após alterações no código
