@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Caça ao Tesouro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Caça ao Tesouro</h1>
+
+  <div id="controles">
+    <label>Largura <input id="x" type="number" value="8" min="2"></label>
+    <label>Altura <input id="y" type="number" value="8" min="2"></label>
+    <label>Pistas <input id="pistas" type="number" value="3" min="0"></label>
+    <label>Obstáculos <input id="obstaculos" type="number" value="6" min="0"></label>
+    <label>Intervalo (ms) <input id="vel" type="number" value="300" min="50" step="50"></label>
+    <button id="iniciar">Iniciar</button>
+  </div>
+
+  <div id="grid"></div>
+  <div id="log"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

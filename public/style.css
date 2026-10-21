@@ -1,0 +1,30 @@
+:root {
+  --fundo: #1e1e2e;
+  --texto: #cdd6f4;
+  --celula: #313244;
+  --visitada: #45475a;
+  --pista: #f9e2af;
+  --obstaculo: #6c7086;
+  --tesouro: #a6e3a1;
+  --agente: #89b4fa;
+  --tamanho-celula: 56px;
+}
+
+body { background: var(--fundo); color: var(--texto); font-family: sans-serif; text-align: center; }
+#controles label { margin: 0 6px; }
+input { width: 60px; }
+
+#grid { display: grid; gap: 3px; justify-content: center; margin: 20px auto; }
+.celula {
+  width: var(--tamanho-celula); height: var(--tamanho-celula);
+  background: var(--celula); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center; font-size: 1.6rem;
+}
+.visitada  { background: var(--visitada); }
+.pista     { background: var(--pista); }
+.obstaculo { background: var(--obstaculo); }
+.tesouro   { background: var(--tesouro); }
+.agente    { background: var(--agente); }
+
+#log { max-width: 600px; margin: auto; text-align: left; font-family: monospace; font-size: .85rem; max-height: 200px; overflow-y: auto; }
+.percepcao { color: var(--pista); }
