@@ -39,7 +39,7 @@ calcular_dica(pos(X1, Y1), pos(X2, Y2), direcao(Dir)) :-
     DY is abs(Y2 - Y1),
     (   DY >= DX ->
         ( Y2 > Y1 -> Dir = cima ; Dir = sul )
-    ;   ( X2 > X1 -> Dir = esquerda ; Dir = direita )
+    ;   ( X2 < X1 -> Dir = esquerda ; Dir = direita )
     ).
 
 % 4. Encadeamento Recursivo de Itens e Obstáculos
