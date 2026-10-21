@@ -104,6 +104,7 @@ O terminal exibirá o prompt interativo:
 ```
 
 ### 3. Executar o Agente
+#### Via console:
 O predicado principal segue a assinatura:
 ```prolog
 iniciar_caca(+Largura, +Altura, +NumPistas, +NumObstaculos, +PosicaoInicial).
@@ -132,6 +133,12 @@ iniciar_caca(+Largura, +Altura, +NumPistas, +NumObstaculos, +PosicaoInicial).
   ```prolog
   ?- iniciar_caca(10, 10, 8, 11, pos(10, 10)).
   ```
+#### Interface gráfica:
+Execute o arquivo `servidor`.pl
+```bash
+swipl servidor.pll
+```
+E acesse a página `localhost:8080`.
 
 ### 4. Recarregar após alterações no código
 Caso modifique o arquivo `CacaTesouro.pl`, não é necessário reiniciar o terminal. No prompt do Prolog, use:
@@ -143,6 +150,7 @@ Para encerrar o interpretador e voltar ao terminal:
 ```prolog
 ?- halt.
 ```
+
 
 ---
 
