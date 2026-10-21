@@ -32,8 +32,8 @@ gerar_todas_posicoes(X, Y, MaxY, PosIni, Acum, Res) :-
 % 3. Dedução de Direção Qualitativa entre Coordenadas
 calcular_dica(pos(X, Y1), pos(X, Y2), direcao(acima)) :- Y2 > Y1, !.
 calcular_dica(pos(X, Y1), pos(X, Y2), direcao(abaixo))   :- Y2 < Y1, !.
-calcular_dica(pos(X1, _), pos(X2, _), direcao(esquerda)) :- X2 > X1, !.
-calcular_dica(pos(X1, _), pos(X2, _), direcao(direita)) :- X2 < X1, !.
+calcular_dica(pos(X1, _), pos(X2, _), direcao(esquerda)) :- X2 < X1, !.
+calcular_dica(pos(X1, _), pos(X2, _), direcao(direita)) :- X2 > X1, !.
 calcular_dica(pos(X1, Y1), pos(X2, Y2), direcao(Dir)) :-
     DX is abs(X2 - X1),
     DY is abs(Y2 - Y1),
@@ -76,8 +76,8 @@ celula_livre(Pos) :-
 
 satisfaz_dica(pos(_, Y1), pos(_, Y2), direcao(cima)) :- Y2 > Y1.
 satisfaz_dica(pos(_, Y1), pos(_, Y2), direcao(sul))   :- Y2 < Y1.
-satisfaz_dica(pos(X1, _), pos(X2, _), direcao(esquerda)) :- X2 > X1.
-satisfaz_dica(pos(X1, _), pos(X2, _), direcao(direita)) :- X2 < X1.
+satisfaz_dica(pos(X1, _), pos(X2, _), direcao(esquerda)) :- X2 < X1.
+satisfaz_dica(pos(X1, _), pos(X2, _), direcao(direita)) :- X2 > X1.
 
 % 6. Percepção Local de Obstáculos
 % Percorre recursivamente as 4 direções ao redor da posição atual.
