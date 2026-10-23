@@ -82,7 +82,12 @@ swipl --version
 ```text
 caca-ao-tesouro/
 ├── CacaTesouro.pl      # Código-fonte principal do agente e regras do grid
+├── servidor.pl         # Servidor HTTP (captura a saída do agente)
 └── README.md       # Instruções e documentação do projeto
+└── public/
+    ├── index.html      # Estrutura da página (campos, botão, grid, log)
+    ├── style.css       # Aparência (cores e tamanhos em variáveis)
+    └── app.js          # Lógica do front end e ícones (objeto ICONES)
 ```
 
 ---
