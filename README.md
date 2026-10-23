@@ -141,7 +141,7 @@ iniciar_caca(+Largura, +Altura, +NumPistas, +NumObstaculos, +PosicaoInicial).
 #### Interface gráfica:
 Execute o arquivo `servidor`.pl
 ```bash
-swipl servidor.pll
+swipl servidor.pl
 ```
 E acesse a página `localhost:8080`.
 
